@@ -160,11 +160,11 @@ AUTH_CONFIG: {
 
 ### 管理后台
 
-- `GET /api/v1/v2bordpanel/config/fetch` - 获取系统配置
-- `POST /api/v1/v2bordpanel/config/save` - 保存系统配置
-- `GET /api/v1/v2bordpanel/user/fetch` - 获取用户列表
-- `GET /api/v1/v2bordpanel/order/fetch` - 获取订单列表
-- `GET /api/v1/v2bordpanel/ticket/fetch` - 获取工单列表
+- `GET /api/v1/后台路径/config/fetch` - 获取系统配置
+- `POST /api/v1/后台路径/config/save` - 保存系统配置
+- `GET /api/v1/后台路径/user/fetch` - 获取用户列表
+- `GET /api/v1/后台路径/order/fetch` - 获取订单列表
+- `GET /api/v1/后台路径/ticket/fetch` - 获取工单列表
 
 
 
