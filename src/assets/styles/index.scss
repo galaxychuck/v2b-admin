@@ -1,0 +1,177 @@
+// 全局样式
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+
+// 变量定义
+:root {
+  --primary-color: #409EFF;
+  --success-color: #67C23A;
+  --warning-color: #E6A23C;
+  --danger-color: #F56C6C;
+  --info-color: #909399;
+  
+  --text-color-primary: #303133;
+  --text-color-regular: #606266;
+  --text-color-secondary: #909399;
+  --text-color-placeholder: #C0C4CC;
+  
+  --border-color-base: #DCDFE6;
+  --border-color-light: #E4E7ED;
+  --border-color-lighter: #EBEEF5;
+  --border-color-extra-light: #F2F6FC;
+  
+  --background-color-base: #F5F7FA;
+}
+
+// 通用样式
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+// 卡片样式
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// 全局卡片移动端响应式样式
+.el-card {
+  @media (max-width: 768px) {
+    margin: 0 -16px;
+    border-radius: 0 !important;
+    
+    .el-card__body {
+      padding: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    margin: 0 -12px;
+    
+    .el-card__body {
+      padding: 12px;
+    }
+  }
+}
+
+// Element Plus 栅格组件移动端样式
+.el-row {
+  @media (max-width: 768px) {
+    margin: 0 -16px !important;
+    
+    .el-col {
+      padding: 0 16px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    margin: 0 -12px !important;
+    
+    .el-col {
+      padding: 0 12px !important;
+    }
+  }
+}
+
+// 表格样式
+.el-table {
+  .el-table__header-wrapper {
+    th {
+      background-color: #fafafa;
+      color: var(--text-color-primary);
+      font-weight: 600;
+    }
+  }
+}
+
+// 分页样式
+.pagination {
+  margin-top: 20px;
+  text-align: right;
+}
+
+// 搜索表单样式
+.search-form {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+// 按钮组样式
+.button-group {
+  .el-button {
+    margin-right: 10px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// 状态标签样式
+.status-tag {
+  &.success {
+    background-color: var(--success-color);
+    color: white;
+  }
+  
+  &.warning {
+    background-color: var(--warning-color);
+    color: white;
+  }
+  
+  &.danger {
+    background-color: var(--danger-color);
+    color: white;
+  }
+  
+  &.info {
+    background-color: var(--info-color);
+    color: white;
+  }
+}
+
+// 引入移动端响应式样式
+@import './mobile.scss';
