@@ -1,7 +1,7 @@
 # V2Board 管理后台
 
 基于 Vue 3 + Element Plus 的 V2Board 管理后台前端项目。
-
+telegram 群组：https://t.me/+wWbCwgKP5zFjMmFl
 ## 功能特性
 
 - 🎯 **现代化技术栈**: Vue 3 + Composition API + Element Plus
